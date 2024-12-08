@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Dec  8 13:01:57 2024
+# Process ID: 524
+# Current directory: D:/Ack_VB/Y3/HW/hw_final_project_simple_billboard/hw_final_project_simple_billboard.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: D:/Ack_VB/Y3/HW/hw_final_project_simple_billboard/hw_final_project_simple_billboard.runs/impl_1/top.vdi
+# Journal file: D:/Ack_VB/Y3/HW/hw_final_project_simple_billboard/hw_final_project_simple_billboard.runs/impl_1\vivado.jou
+# Running On        :LAPTOP-VB
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 4700U with Radeon Graphics         
+# CPU Frequency     :1996 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :7969 MB
+# Swap memory       :10520 MB
+# Total Virtual     :18489 MB
+# Available Virtual :3686 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
