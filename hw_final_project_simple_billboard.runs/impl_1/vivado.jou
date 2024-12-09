@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec  8 13:01:57 2024
-# Process ID: 524
+# Start of session at: Mon Dec  9 08:55:32 2024
+# Process ID: 10928
 # Current directory: D:/Ack_VB/Y3/HW/hw_final_project_simple_billboard/hw_final_project_simple_billboard.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: D:/Ack_VB/Y3/HW/hw_final_project_simple_billboard/hw_final_project_simple_billboard.runs/impl_1/top.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :8
 # Host memory       :7969 MB
-# Swap memory       :10520 MB
-# Total Virtual     :18489 MB
-# Available Virtual :3686 MB
+# Swap memory       :7626 MB
+# Total Virtual     :15596 MB
+# Available Virtual :3230 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

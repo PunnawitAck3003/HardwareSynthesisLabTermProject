@@ -117,13 +117,25 @@ module text_screen_gen(
     // use delayed coordinates for comparison
     assign cursor_on = (pix_y2_reg[8:4] == cur_y_reg) &&
                        (pix_x2_reg[9:3] == cur_x_reg);
+                       
+    wire banner_on, h_on, i_on;
+    assign banner_on =  ( (x>=20) && (x<=620) && (y>= 10) && (y<=120) );
+    assign h_on = ((x>=100) && (x<=120) && (y>=30) && (y<=120)) ||  
+                  ((x>=150) && (x<=170) && (y>=30) && (y<=120)) ||
+                  ((x>=100) && (x<=150) && (y>=70) && (y<=80));
+    assign i_on = ((x>=180) && (x<=200) && (y>=30) && (y<=50)) ||
+                  ((x>=180) && (x<=200) && (y>=70) && (y<=120));
     
     // rgb multiplexing circuit
     always @*
-        if(not_show || reset)
+        if((not_show && y>120) || reset)
             rgb = 12'h000;     // blank
         else
-            if(cursor_on)
+            if (h_on) rgb = 12'h0FF;//
+            else if(i_on) rgb = 12'h00F;
+            else if(banner_on) rgb = 12'hFF0;//Yellow
+            //else if(h_on) rgb = 12'h0FF;//
+            else if(cursor_on)
                 rgb = 12'h0F0;
             else
                 rgb = text_rgb;
